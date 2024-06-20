@@ -1,13 +1,19 @@
-import { Button } from "./components/ui/button";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Sidenav from "./components/Sidenav";
 
 function App() {
   return (
     <>
-      <div className="underline">
-        Gokul
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-        <Button>Button</Button>
+      <Header />
+      <div className="w-64">
+        <Sidenav />
       </div>
+      <div className="ml-64">
+        <Body />
+      </div>
+      {/* <Footer /> */}
     </>
   );
 }
