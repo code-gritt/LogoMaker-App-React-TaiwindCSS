@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -85,14 +86,6 @@ const Header = () => {
                     href="#"
                     className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
-                    Marketplace
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                  >
                     Features
                   </a>
                 </li>
@@ -110,6 +103,51 @@ const Header = () => {
                     className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >
+                    <div className="dropdown inline-block relative">
+                      <button className="text-white font-semibold rounded inline-flex items-center">
+                        <span className="mr-1">Settings</span>
+                        <svg
+                          className="fill-current h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
+                        </svg>
+                      </button>
+                      <ul className="dropdown-menu absolute hidden text-white pt-4">
+                        <li className="w-60">
+                          <a
+                            className="transition duration-300 ease-out rounded-t bg-gray-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                          >
+                            One
+                          </a>
+                        </li>
+                        <li className="">
+                          <a
+                            className="transition duration-300 ease-out bg-gray-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                          >
+                            Two
+                          </a>
+                        </li>
+                        <li className="">
+                          <a
+                            className="transition duration-300 ease-out rounded-b bg-gray-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                            href="#"
+                          >
+                            Three is the magic number
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </a>
                 </li>
               </ul>

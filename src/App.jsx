@@ -7,13 +7,13 @@ function App() {
   return (
     <>
       <Header />
-      <div className="w-64">
+      <div className="w-64 h-screen border-r">
         <Sidenav />
       </div>
       <div className="ml-64">
         <Body />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

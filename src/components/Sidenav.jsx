@@ -25,10 +25,14 @@ const Sidenav = () => {
         <ul>
           {names.map((name, index) => (
             <li
-              className="transition duration-300 ease-out text-lg p-3 px-10 hover:text-white cursor-pointer hover:bg-gray-900 bg-primary text-gray-500"
+              onClick={() => setActiveIndex(index)}
+              className="${activeIndex==index && 'bg-gray-900 text-white'} transition duration-300 ease-out text-lg p-5 px-10 hover:text-white cursor-pointer hover:bg-gray-900 bg-primary text-gray-500"
               key={index}
             >
-              {name.name}
+              <div className="flex justify-start space-around">
+                <name.icon />
+                <p className="ml-5">{name.name}</p>
+              </div>
             </li>
           ))}
         </ul>
