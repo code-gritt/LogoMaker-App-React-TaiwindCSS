@@ -20,7 +20,7 @@ const Header = () => {
             <div className="flex items-center lg:order-2">
               <a
                 href="#"
-                className="text-white dark:text-white hover:bg-gray-200 hover:text-black transition duration-300 ease-out font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+                className="hover:scale-105 dark:text-white bg-gray-200 text-black transition duration-300 ease-out font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
               >
                 Download
               </a>
@@ -121,7 +121,7 @@ const Header = () => {
                           <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{" "}
                         </svg>
                       </button>
-                      <ul className="dropdown-menu absolute hidden text-white pt-4">
+                      <ul className="dropdown-menu absolute hidden text-white pt-5">
                         <li className="w-60">
                           <a
                             className="transition duration-300 ease-out rounded-t bg-gray-900 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
