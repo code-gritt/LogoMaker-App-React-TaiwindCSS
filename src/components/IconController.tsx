@@ -1,7 +1,9 @@
 import { Smile } from "lucide-react";
-import React from "react";
+import { useState } from "react";
+import { Slider } from "./ui/slider";
 
 const IconController = () => {
+  const [currentValue, setCurrentValue] = useState(0);
   return (
     <>
       <div>
@@ -13,6 +15,10 @@ const IconController = () => {
           >
             <Smile />
           </div>
+        </div>
+        <div>
+          <label>Size</label>
+          <Slider defaultValue={[33]} max={100} step={1} />
         </div>
       </div>
     </>

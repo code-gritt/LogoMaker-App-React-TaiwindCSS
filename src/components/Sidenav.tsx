@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Image, PencilRuler, Shield } from "lucide-react";
 
 const Sidenav = ({ selectedIndex }) => {
