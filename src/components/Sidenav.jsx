@@ -35,7 +35,7 @@ const Sidenav = ({ selectedIndex }) => {
               }`}
               key={index}
             >
-              <div className="flex justify-start space-around">
+              <div className="flex justify-start hover:scale-105 transition duration-300 ease-out space-around">
                 <name.icon />
                 <p className="ml-5">{name.name}</p>
               </div>
