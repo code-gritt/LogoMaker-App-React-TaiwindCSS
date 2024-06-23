@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Image, PencilRuler, Shield } from "lucide-react";
 
-const Sidenav = ({ selectedIndex }) => {
-  const [activeIndex, setActiveIndex] = useState("");
+const Sidenav = ({ selectedIndex }: { selectedIndex: any }) => {
   const names = [
     {
       id: 1,
@@ -24,15 +22,12 @@ const Sidenav = ({ selectedIndex }) => {
     <>
       <div>
         <ul>
-          {names.map((name, index) => (
+          {names.map((name, index: any) => (
             <li
               onClick={() => {
-                setActiveIndex(index);
                 selectedIndex(index);
               }}
-              className={`transition duration-300 ease-out text-lg p-5 px-10 hover:text-white cursor-pointer hover:bg-gray-900 bg-primary text-gray-500 ${
-                activeIndex == index && `bg-gray-900 text-white`
-              }`}
+              className={`transition duration-300 ease-out text-lg p-5 px-10 hover:text-white cursor-pointer hover:bg-gray-900 bg-primary text-gray-500`}
               key={index}
             >
               <div className="flex justify-start hover:scale-105 transition duration-300 ease-out space-around">

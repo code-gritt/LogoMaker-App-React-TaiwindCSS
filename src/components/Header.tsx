@@ -19,7 +19,7 @@ const Header = () => {
             <div className="flex items-center lg:order-2">
               <a
                 href="#"
-                className="hover:scale-105 text-black bg-gray-200 transition duration-300 ease-out font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:focus:ring-gray-800"
+                className="hover:scale-105 text-black bg-gray-200 transition duration-300 ease-out font-medium rounded-xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:focus:ring-gray-800"
               >
                 Download
               </a>
