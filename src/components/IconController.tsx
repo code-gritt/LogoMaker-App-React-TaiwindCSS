@@ -1,11 +1,26 @@
 import { Smile } from "lucide-react";
-import { useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { Slider } from "./ui/slider";
 import ColorPickerController from "./ColorPickerController";
 
 const IconController = () => {
   const [size, setSize] = useState(280);
   const [rotate, setRotate] = useState(0);
+  const [color, setColor] = useState("#fff");
+
+  const storageValue = JSON.parse(localStorage.getItem("value"));
+
+  useEffect(() => {
+    const updatedValue = {
+      ...storageValue,
+      iconSize: size,
+      iconRotate: rotate,
+      iconColor: color,
+      icon: "Smile",
+    };
+
+    localStorage.setItem("value", JSON.stringify(updatedValue));
+  }, [size, rotate, color]);
   return (
     <>
       <div>
@@ -46,7 +61,10 @@ const IconController = () => {
           <label className="p-2 font-semibold flex justify-between items-center">
             Icon Colour
           </label>
-          <ColorPickerController />
+          <ColorPickerController
+            hideController={true}
+            selectedColor={(color: SetStateAction<string>) => setColor(color)}
+          />
         </div>
       </div>
     </>

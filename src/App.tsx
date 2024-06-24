@@ -30,7 +30,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="relative top-60">
+      <div className="relative top-40">
       <Footer />
       </div>
  
